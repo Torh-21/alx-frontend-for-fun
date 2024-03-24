@@ -5,14 +5,6 @@ import markdown
 into an HTML file"""
 
 
-if __name__ == "__main__":
-    # Check if correct number of arguments provided
-    if len(sys.argv) != 3:
-        print("Usage: ./markdown2html.py README.md README.html", file=sys.stderr)
-        sys.exit(1)
-
-    inputmd = sys.argv[1]
-    outputfile = sys.argv[2]
 
 
 def markdowntohtml(inputmd, outputfile):
@@ -27,3 +19,11 @@ def markdowntohtml(inputmd, outputfile):
         print(f"Error: {e}", file=sys.stderr)
         sys.exit(1)
 
+if __name__ == "__main__":
+    # Check if correct number of arguments provided
+    if len(sys.argv) != 3:
+        print("Usage: ./markdown2html.py README.md README.html", file=sys.stderr)
+        sys.exit(1)
+
+    inputmd = sys.argv[1]
+    outputfile = sys.argv[2]
