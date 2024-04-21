@@ -1,0 +1,1 @@
+This is the ALX FRONTEND FOR FUN - Accessibility Project
