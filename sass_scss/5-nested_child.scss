@@ -1,0 +1,9 @@
+// Using nested child rules in sass
+body {
+    color: #3d3d3d;
+
+    >.red {
+        color: #FF0000;
+    }
+
+}
