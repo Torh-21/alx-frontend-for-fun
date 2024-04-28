@@ -1,0 +1,9 @@
+//  Looping rules in SASS
+
+@import '11-photos';
+
+@each $name in $list-names {
+    .#{lowercase($name)} {
+        background-image: url('images/#{lowercase($name)}.jpg');
+    }
+}
